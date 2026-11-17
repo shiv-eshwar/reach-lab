@@ -1,0 +1,6 @@
+fold,n_train_subjects,n_test_subjects,baseline_roc_auc
+1,41,10,1.0
+2,41,10,1.0
+3,41,10,1.0
+4,41,10,1.0
+5,40,11,1.0

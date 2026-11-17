@@ -1,0 +1,9 @@
+biomarker,rfe_rank,rfe_selected
+Functional_Consistency_Index,1,True
+Motion_Variability_Index,1,True
+Movement_Smoothness_Index,1,True
+Movement_Stability_Index,1,True
+Trajectory_Stability_Index,1,True
+Joint_Coordination_Index,2,False
+Motor_Adaptability_Index,3,False
+Reach_Efficiency_Index,4,False

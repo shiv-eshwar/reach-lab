@@ -1,0 +1,13 @@
+model,actual,predicted,count
+Extra_Trees,TD,TD,19
+Extra_Trees,TD,DCP,2
+Extra_Trees,DCP,TD,4
+Extra_Trees,DCP,DCP,26
+Linear_SVM,TD,TD,19
+Linear_SVM,TD,DCP,2
+Linear_SVM,DCP,TD,5
+Linear_SVM,DCP,DCP,25
+Random_Forest,TD,TD,21
+Random_Forest,TD,DCP,0
+Random_Forest,DCP,TD,3
+Random_Forest,DCP,DCP,27

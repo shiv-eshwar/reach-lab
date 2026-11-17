@@ -1,0 +1,6 @@
+feature,weight
+Functional_Consistency_Index > 0.59,-0.2866936229965116
+0.26 < Movement_Stability_Index <= 0.49,-0.1953107974903084
+Motion_Variability_Index > 0.28,-0.04017620926513248
+Trajectory_Stability_Index > 0.31,0.037758016258683365
+Movement_Smoothness_Index > 0.68,0.0021030867010877487

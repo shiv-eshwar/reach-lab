@@ -1,0 +1,42 @@
+LEAKAGE & METHODOLOGY AUDIT
+======================================================================
+
+DATASET
+Shape: (51, 166)
+Subjects: 51
+Predictors: 162
+TD: 21
+DCP: 30
+
+METHODOLOGY
+----------------------------------------------------------------------
+prediction_unit: Subject
+dataset_size: 51 subjects
+groups: 30 DCP / 21 TD
+outer_cv: 5-fold StratifiedGroupKFold
+inner_cv: 4-fold StratifiedGroupKFold
+group_variable: subject
+imputation: Median imputation inside ML pipeline
+scaling: StandardScaler inside ML pipeline
+feature_selection: Mutual-information SelectKBest inside ML pipeline
+hyperparameter_tuning: Inner cross-validation only
+outer_test_subjects: Not used for fitting preprocessing, feature selection, or hyperparameter tuning
+
+AUDIT CHECKS
+----------------------------------------------------------------------
+PASS: Experiment dataset exists — Shape = (51, 166)
+PASS: Required subject and target columns — Both subject and target are present.
+PASS: Unique subject count — 51 unique subjects found.
+PASS: One row per subject — No subject occurs more than once.
+PASS: Target distribution — TD=21 and DCP=30.
+PASS: Predictor count — 162 predictor variables.
+PASS: Predictor data type — All 162 predictors are numeric.
+PASS: Completely missing predictors — No predictor is completely missing.
+INFO: Partially missing predictors — 30 predictors contain some missing values.
+PASS: Duplicate complete rows — No duplicate complete rows.
+PASS: Model benchmark subject uniqueness — Each model has at most one prediction per subject.
+PASS: Model benchmark subject coverage — Every benchmark model has predictions for all 51 subjects.
+PASS: Outer-fold subject isolation — Each subject is assigned to one outer test fold per model.
+PASS: Top-3 outer-fold subject isolation — Each subject appears in one outer fold per model.
+PASS: Ablation outer-fold coverage — Each representation has five outer folds.
+INFO: Stable feature set — 7 features identified as stable.

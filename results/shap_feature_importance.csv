@@ -1,0 +1,6 @@
+biomarker,mean_abs_shap
+Movement_Stability_Index,0.20364288523841578
+Functional_Consistency_Index,0.18909381081038662
+Motion_Variability_Index,0.041006820048900834
+Trajectory_Stability_Index,0.03567852331581266
+Movement_Smoothness_Index,0.011441547664672518

@@ -1,0 +1,17 @@
+check,status,details
+Experiment dataset exists,PASS,"Shape = (51, 166)"
+Required subject and target columns,PASS,Both subject and target are present.
+Unique subject count,PASS,51 unique subjects found.
+One row per subject,PASS,No subject occurs more than once.
+Target distribution,PASS,TD=21 and DCP=30.
+Predictor count,PASS,162 predictor variables.
+Predictor data type,PASS,All 162 predictors are numeric.
+Completely missing predictors,PASS,No predictor is completely missing.
+Partially missing predictors,INFO,30 predictors contain some missing values.
+Duplicate complete rows,PASS,No duplicate complete rows.
+Model benchmark subject uniqueness,PASS,Each model has at most one prediction per subject.
+Model benchmark subject coverage,PASS,Every benchmark model has predictions for all 51 subjects.
+Outer-fold subject isolation,PASS,Each subject is assigned to one outer test fold per model.
+Top-3 outer-fold subject isolation,PASS,Each subject appears in one outer fold per model.
+Ablation outer-fold coverage,PASS,Each representation has five outer folds.
+Stable feature set,INFO,7 features identified as stable.
